@@ -64,7 +64,7 @@
       <section class="hero">
         <div class="">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button link" type="button" data-modal-open>
+          <button class="button hero-button" type="button" data-modal-open>
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -72,10 +72,68 @@
               <button type="button" class="close-modal" data-modal-close>
                 <img src="./images/close-button.svg" alt="Закрыть окно" />
               </button>
+
+              <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="recall-form">
+                <div class="form-field">
+                  <label for="name" class="form-label">Имя</label>
+                  <input
+                    id="name"
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="tel" class="form-label">Телефон</label>
+                  <input
+                    id="tel"
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="email" class="form-label">Почта</label>
+                  <input
+                    id="email"
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="comment" class="form-label">Комментарий</label>
+                  <textarea
+                    id="comment"
+                    class="form-comment"
+                    name="comment"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="checkbox-wrap">
+                  <input id="checkbox" type="checkbox" />
+                  <label for="checkbox" class="checkbox-label">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-link" href="">Условия договора</a>
+                  </label>
+                </div>
+
+                <button class="button form-button" type="submit">
+                  Отправить
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
+      <div></div>
       <!--Benefits-->
       <section class="benefits section">
         <div class="container">
@@ -550,6 +608,11 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-wrap">
+          <p class="join-us-text">Подпишитесь на рассылку</p>
+          <input id="" type="email" placeholder="E-mail" />
+          <button type="button">Подписаться</button>
         </div>
       </div>
     </footer>
