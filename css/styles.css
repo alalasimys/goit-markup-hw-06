@@ -235,7 +235,8 @@ footer {
   margin-right: 70px;
 }
 
-.join-us-text {
+.join-us-text,
+.subscribe-text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -254,6 +255,30 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.subscribe-input {
+  width: 358px;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* .subscribe-input:placeholder-shown {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+} */
 
 .hero-title,
 .hero-button {
@@ -276,8 +301,8 @@ footer {
 
 .button {
   display: inline-block;
-  padding-top: 10px;
 
+  padding-top: 10px;
   padding-bottom: 10px;
 
   font-weight: 700;
@@ -795,6 +820,7 @@ footer {
 }
 
 .form-field {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -819,6 +845,12 @@ footer {
   color: var(--primary-text-color);
 }
 
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 35px;
+}
+
 .form-input,
 .form-comment {
   width: 100%;
@@ -828,6 +860,10 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.form-input {
+  padding-left: 42px;
 }
 
 .form-input:focus,
